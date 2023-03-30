@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>科目登録ページ</title>
+</head>
+<body>
+    <h1>科目登録</h1>
+    <form action="add_subject.php" method="post">
+        <label for="subject_id">科目ID:</label>
+        <input type="text" id="subject_id" name="subject_id" maxlength="6" required><br>
+
+        <label for="name">科目名:</label>
+        <input type="text" id="name" name="name" maxlength="20" required><br>
+
+        <label for="target_grade">対象学年:</label>
+        <input type="number" id="target_grade" name="target_grade" min="1" max="11" required><br>
+
+        <label for="acquired">取得単位数:</label>
+        <input type="number" id="acquired" name="acquired" min="1" max="11" required><br>
+
+        <label for="weeks">開催曜日:</label>
+        <input type="text" id="weeks" name="weeks" maxlength="10" required><br>
+
+        <label for="times">開催時間:</label>
+        <input type="number" id="times" name="times" min="1" required><br>
+
+        <input type="submit" name="submit" value="登録">
+    </form>
+</body>
+</html>

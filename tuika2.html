@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>履修登録 科目追加入力</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- ここにPHPで、クリックした日時に受講可能な科目を表示させる内容を記述 -->
+        <h1>プルダウンリスト</h1>
+        <h2><td><input type="button" value="編集画面に戻る" onclick="location.href='top.html'"></td></h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>月</th>
+                    <th>火</th>
+                    <th>水</th>
+                    <th>木</th>
+                    <th>金</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button class="modal-btn">追加</button></td>
+                    <td><button class="modal-btn">追加</button></td>
+                    <td><button class="modal-btn">追加</button></td>
+                    <td><button class="modal-btn">追加</button></td>
+                    <td><button class="modal-btn">追加</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <ul>
+                    <li><button class="subject-btn" >文学研究1</button></li>
+                    <li><button class="subject-btn">文章表現法1</button></li>
+                    <li><button class="subject-btn">国語科教育法</button></li>
+                    <li><button class="subject-btn">英米文学1</button></li>
+                    <li><button class="subject-btn">日本史論</button></li>
+                    <li><button class="subject-btn">図書館サービス論</button></li>
+                    <li><button class="subject-btn">博物館概論</button></li>
+                    <li><button class="subject-btn">学科ゼミ1</button></li>
+                </ul>
+            </div>
+    
+        </div>
+        <script>
+            // モーダルウィンドウを取得する
+            var modal = document.getElementById("myModal");
+    
+            // class="modal-btn"の要素を全て取得する
+            var modalBtnList = document.querySelectorAll(".modal-btn");
+    
+            // class="close"がついた最初の要素を取得する
+            var span = document.querySelector(".close");
+    
+            // class="subject-btn"がついた要素を全て取得する
+            var subjectBtnList = document.querySelectorAll(".subject-btn");
+    
+            // クリックされたモーダルボタンを保持する
+            var activeBtn;
+    
+            // モーダルを開くクリックイベントを全てのボタンに付与する
+            modalBtnList.forEach(btn => {
+                btn.onclick = function (event) {
+                    // クリックされたボタン情報を保存
+                    activeBtn = event.target;
+                    // モーダルを表示
+                    modal.style.display = "block";
+                }
+            });
+    
+            // 科目ボタンにクリックイベントを付与する
+            subjectBtnList.forEach(btn => {
+                btn.onclick = function (event) {
+                    // モーダルのボタンのテキストを更新
+                    activeBtn.textContent = event.target.textContent;
+                    // モーダルを閉じる
+                    modal.style.display = "none";
+                }
+            });
+    
+            // 閉じるボタンを押した時の処理
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+    
+            // モーダル自体をクリックしたときに閉じる
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>

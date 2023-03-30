@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>トップページ</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <header>
+        <button class="headerb">お知らせ</button>
+        <button class="headerb">トップページ</button>
+        <button class="headerb">履修登録編集</button>
+        <button class="headerb"><a href="kamokutouroku.html" class="headerb">教員専用ページ</a></button>
+        <button class="headerb">カレンダー</button>
+        <button class="headerb">ログアウト</button>
+    </header>
+
+    <body>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>  </th>
+                    <th>月</th>
+                    <th>火</th>
+                    <th>水</th>
+                    <th>木</th>
+                    <th>金</th>
+                    <th>土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                    <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                    <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                    <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                    <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                    <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <td>2</td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+            </tbody>
+            <tbody>
+                <td>3</td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+            </tbody>
+            <tbody>
+                <td>4</td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+            </tbody>
+            <tbody>
+                <td>5</td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+            </tbody>
+        </table>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <ul>
+                    <li><a href="kamoku2.php?subject=文学研究1"><button class="subject-btn">文学研究1</button></a></li>
+                    <li><a href="kamoku2.php?subject=文章表現法1"><button class="subject-btn">文章表現法1</button></li>
+                    <li><a href="kamoku2.php?subject=国語科教育法"><button class="subject-btn">国語科教育法</button></li>
+                    <li><a href="kamoku2.php?subject=英米文学1"><button class="subject-btn">英米文学1</button></li>
+                    <li><a href="kamoku2.php?subject=日本史論"><button class="subject-btn">日本史論</button></li>
+                    <li><a href="kamoku2.php?subject=図書館サービス論"><button class="subject-btn">図書館サービス論</button></li>
+                    <li><a href="kamoku2.php?subject=博物館概論"><button class="subject-btn">博物館概論</button></li>
+                    <li><a href="kamoku2.php?subject=学科ゼミ1"><button class="subject-btn">学科ゼミ1</button></li>
+                </ul>
+            </div>
+    
+        </div>
+        <script>
+            // モーダルウィンドウを取得する
+            var modal = document.getElementById("myModal");
+    
+            // class="modal-btn"の要素を全て取得する
+            var modalBtnList = document.querySelectorAll(".modal-btn");
+    
+            // class="close"がついた最初の要素を取得する
+            var span = document.querySelector(".close");
+    
+            // class="subject-btn"がついた要素を全て取得する
+            var subjectBtnList = document.querySelectorAll(".subject-btn");
+    
+            // クリックされたモーダルボタンを保持する
+            var activeBtn;
+    
+            // モーダルを開くクリックイベントを全てのボタンに付与する
+            modalBtnList.forEach(btn => {
+                btn.onclick = function (event) {
+                    // クリックされたボタン情報を保存
+                    activeBtn = event.target;
+                    // モーダルを表示
+                    modal.style.display = "block";
+                }
+            });
+    
+            // 科目ボタンにクリックイベントを付与する
+            subjectBtnList.forEach(btn => {
+                btn.onclick = function (event) {
+                    // モーダルのボタンのテキストを更新
+                    activeBtn.textContent = event.target.textContent;
+                    // モーダルを閉じる
+                    modal.style.display = "none";
+                }
+            });
+    
+            // 閉じるボタンを押した時の処理
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+    
+            // モーダル自体をクリックしたときに閉じる
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+    </body>
+</html>
