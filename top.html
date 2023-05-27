@@ -10,15 +10,35 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </head>
 
-    <header>
-        
-        <button class="btn btn--orange"><a href="">お知らせ</a></button>
-        <button class="btn btn--orange"><a href="">トップページ</a></button>
-        <button class="btn btn--orange"><a href="">履修登録編集</a></button>
-        <button class="btn btn--orange"><a href="kamokutouroku.html" class="headerb">教員専用ページ</a></button>
-        <button class="btn btn--orange"><a href="">カレンダー</a></button>
-        <button class="btn btn--orange"><a href="">ログアウト</a></button>
-    </header>
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+          </a>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 link-secondary">トップページ</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">お知らせ</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">履修登録編集</a></li>
+            <li><a href="kamokutouroku.html" class="nav-link px-2 link-dark">教員専用ページ</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">カレンダー</a></li>
+          </ul>
+    
+          <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" class="btn btn-primary">Sign-up</button>
+          </div>
+        </header>
+    </div>
+
+    <!-- パンくずリスト -->
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">トップページ</a></li>
+          <li class="breadcrumb-item active" aria-current="page">履修登録編集</li>
+        </ol>
+      </nav>
+
 
     <body>
         <!-- With controls 画面スクロールするやつ -->
@@ -46,86 +66,113 @@
 
           <br>
 
-        <!-- パンくずリスト -->
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">トップページ</a></li>
-              <li class="breadcrumb-item active" aria-current="page">履修登録編集</li>
-            </ol>
-          </nav>
-
         <br>
-        <table>
+        <table class="table">
             <thead>
-                <tr>
-                    <th>  </th>
-                    <th>月</th>
-                    <th>火</th>
-                    <th>水</th>
-                    <th>木</th>
-                    <th>金</th>
-                    <th>土</th>
-                </tr>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">月</th>
+                <th scope="col">火</th>
+                <th scope="col">水</th>
+                <th scope="col">木</th>
+                <th scope="col">金</th>
+                <th scope="col">土</th>
+              </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td><input class="chouse1" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                    <td><input class="chouse2" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                    <td><input class="chouse3" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                    <td><input class="chouse4" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                    <td><input class="chouse5" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                    <td><input class="chouse6" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td><input class="chouse1 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse2 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse3 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse4 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse5 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse6 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><input class="chouse7 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse8 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse9 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse10 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse11 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse12 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><input class="chouse13 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse14 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse15 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse16 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse17 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse18 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td><input class="chouse19 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse20 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse21 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse22 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse23 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse24 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td><input class="chouse25 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse26 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse27 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse28 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse29 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+                <td><input class="chouse30 btn btn-primary" type="button" value="追加" onclick="location.href='tuika.html'"></td>
+              </tr>
             </tbody>
-            <tbody>
-                <td>2</td>
-                <td><input class="chouse7" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse8" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse9" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse10" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse11" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse12" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-            </tbody>
-            <tbody>
-                <td>3</td>
-                <td><input class="chouse13" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse14" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse15" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse16" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse17" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse18" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-            </tbody>
-            <tbody>
-                <td>4</td>
-                <td><input class="chouse19" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse20" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse21" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse22" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse23" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse24" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-            </tbody>
-            <tbody>
-                <td>5</td>
-                <td><input class="chouse25" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse26" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse27" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse28" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse29" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-                <td><input class="chouse30" type="button" value="追加" onclick="location.href='tuika.html'"></td>
-            </tbody>
-        </table>
+          </table>
 
         <br>
-        <!-- カード -->
-        <div class="card" style="width: 18rem;">
-            <img src="和食1.jpg" class="card-img-top" alt="今月の食堂メニュー一覧です。" width="150rem">
-            <div class="card-body">
-              <h5 class="card-title">食堂メニュー表</h5>
-              <p class="card-text">今月の食堂メニュー一覧です。</p>
-              <a href="#" class="btn btn-primary">一覧へ</a>
+
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">お知らせ</div>
+                    <div class="card-body">
+                      <h5 class="card-title">お知らせ</h5>
+                      <p class="card-text">お知らせ一覧を確認することができます。</p>
+                      <a href="#" class="btn btn-primary">お知らせへ</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">履修登録編集</div>
+                    <div></div>
+                    <div class="card-body">
+                      <h5 class="card-title">履修登録編集</h5>
+                      <p class="card-text">履修登録の編集ページです。</p>
+                      <a href="#" class="btn btn-primary">履修登録編集へ</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">教員専用ページ</div>
+                    <div class="card-body">
+                      <h5 class="card-title">教員専用ページ</h5>
+                      <p class="card-text">教員専用ページでは教員用の機能が利用できます。</p>
+                      <a href="#" class="btn btn-primary">教員専用ページへ</a>
+                    </div>
+                </div>
+ 
+              </div>
             </div>
           </div>
+
+          <footer class="footer">
+            <div class="container">
+              <p class="text-muted">@履修登録アプリ</p>
+            </div>
+        </footer>
+
 
 
         <!-- The Modal -->
@@ -135,13 +182,13 @@
                 <span class="close">&times;</span>
                 <ul>
                     <li><a href="kamoku2.php?subject=文学研究1"><button class="subject-btn">文学研究1</button></a></li>
-                    <li><a href="kamoku2.php?subject=文章表現法1"><button class="subject-btn">文章表現法1</button></li>
-                    <li><a href="kamoku2.php?subject=国語科教育法"><button class="subject-btn">国語科教育法</button></li>
-                    <li><a href="kamoku2.php?subject=英米文学1"><button class="subject-btn">英米文学1</button></li>
-                    <li><a href="kamoku2.php?subject=日本史論"><button class="subject-btn">日本史論</button></li>
-                    <li><a href="kamoku2.php?subject=図書館サービス論"><button class="subject-btn">図書館サービス論</button></li>
-                    <li><a href="kamoku2.php?subject=博物館概論"><button class="subject-btn">博物館概論</button></li>
-                    <li><a href="kamoku2.php?subject=学科ゼミ1"><button class="subject-btn">学科ゼミ1</button></li>
+                    <li><a href="kamoku2.php?subject=文章表現法1"><button class="subject-btn">文章表現法1</button></a></li>
+                    <li><a href="kamoku2.php?subject=国語科教育法"><button class="subject-btn">国語科教育法</button></a></li>
+                    <li><a href="kamoku2.php?subject=英米文学1"><button class="subject-btn">英米文学1</button></a></li>
+                    <li><a href="kamoku2.php?subject=日本史論"><button class="subject-btn">日本史論</button></a></li>
+                    <li><a href="kamoku2.php?subject=図書館サービス論"><button class="subject-btn">図書館サービス論</button></a></li>
+                    <li><a href="kamoku2.php?subject=博物館概論"><button class="subject-btn">博物館概論</button></a></li>
+                    <li><a href="kamoku2.php?subject=学科ゼミ1"><button class="subject-btn">学科ゼミ1</button></a></li>
                 </ul>
             </div>
     
