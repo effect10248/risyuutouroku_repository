@@ -42,6 +42,13 @@
 
     echo '</h1>';
     ?>
+
+    <form method="POST" action="register.php">
+    <input type="hidden" name="subject" value="<?php echo htmlspecialchars($subject, ENT_QUOTES, 'UTF-8'); ?>">
+    <input type="submit" value="登録">
+    </form>
+
+
 </body>
 </html>
 

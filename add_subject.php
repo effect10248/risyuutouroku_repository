@@ -1,15 +1,15 @@
 <?php
 // データベース接続情報
-$servername = "localhost";
-$username = "root";
-$password = "root";
+$servername = "mysql1.php.xdomain.ne.jp";
+$username = "orijinaru_db1";
+$password = "effect0408";
 $dbname = "risyuutouroku";
 
 // データベースに接続
-$dsn = 'mysql:dbname=risyuutouroku;host=localhost;charset=utf8mb4';
- $user = 'root';
+$dsn = 'mysql:host=mysql1.php.xdomain.ne.jp;dbname=orijinaru_db1;charset=utf8';
+ $user = 'orijinaru_effect';
 // MAMPを利用しているMacユーザーの方は、''ではなく'root'を代入してください
- $password = 'root';
+ $password = 'effect0408';
 
  $pdo = new PDO($dsn, $user, $password);
 

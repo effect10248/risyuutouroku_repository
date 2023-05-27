@@ -4,85 +4,7 @@
         <title>履修登録 科目追加入力</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- ここにPHPで、クリックした日時に受講可能な科目を表示させる内容を記述 -->
-        <h1>編集画面</h1>
-        <h2><td><input type="button" value="トップに戻る" onclick="location.href='top.html'"></td></h2>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>月</th>
-                    <th>火</th>
-                    <th>水</th>
-                    <th>木</th>
-                    <th>金</th>
-                    <th>土</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                </tr>
-                <tr>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                </tr>
-                <tr>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                </tr>
-                <tr>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                </tr>
-                <tr>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                    <td><button class="modal-btn">追加</button></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <ul>
-                    <li><a href="kamoku2.php?subject=文学研究1"><button class="subject-btn">文学研究1</button></a></li>
-                    <li><a href="kamoku2.php?subject=文章表現法1"><button class="subject-btn">文章表現法1</button></li>
-                    <li><a href="kamoku2.php?subject=国語科教育法"><button class="subject-btn">国語科教育法</button></li>
-                    <li><a href="kamoku2.php?subject=英米文学1"><button class="subject-btn">英米文学1</button></li>
-                    <li><a href="kamoku2.php?subject=日本史論"><button class="subject-btn">日本史論</button></li>
-                    <li><a href="kamoku2.php?subject=図書館サービス論"><button class="subject-btn">図書館サービス論</button></li>
-                    <li><a href="kamoku2.php?subject=博物館概論"><button class="subject-btn">博物館概論</button></li>
-                    <li><a href="kamoku2.php?subject=学科ゼミ1"><button class="subject-btn">学科ゼミ1</button></li>
-                </ul>
-            </div>
-    
-        </div>
         <script>
             // モーダルウィンドウを取得する
             var modal = document.getElementById("myModal");
@@ -131,5 +53,93 @@
                 }
             }
         </script>
+
+    </head>
+    <body>
+        <!-- ここにPHPで、クリックした日時に受講可能な科目を表示させる内容を記述 -->
+        <h1>編集画面</h1>
+        <h2><td><input type="button" value="トップに戻る" onclick="location.href='top.html'"></td></h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>  </th>
+                    <th>月</th>
+                    <th>火</th>
+                    <th>水</th>
+                    <th>木</th>
+                    <th>金</th>
+                    <th>土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <!-- 追加 -->
+                    <td><button class="modal-btn chouse1">追加</button></td>
+                    <td><button class="modal-btn chouse2">追加</button></td>
+                    <td><button class="modal-btn chouse3">追加</button></td>
+                    <td><button class="modal-btn chouse4">追加</button></td>
+                    <td><button class="modal-btn chouse5">追加</button></td>
+                    <td><button class="modal-btn chouse6">追加</button></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <td>2</td>
+                <td><button class="modal-btn chouse7">追加</button></td>
+                <td><button class="modal-btn chouse8">追加</button></td>
+                <td><button class="modal-btn chouse9">追加</button></td>
+                <td><button class="modal-btn chouse10">追加</button></td>
+                <td><button class="modal-btn chouse11">追加</button></td>
+                <td><button class="modal-btn chouse12">追加</button></td>
+            </tbody>
+            <tbody>
+                <td>3</td>
+                <td><button class="modal-btn chouse13">追加</button></td>
+                <td><button class="modal-btn chouse14">追加</button></td>
+                <td><button class="modal-btn chouse15">追加</button></td>
+                <td><button class="modal-btn chouse16">追加</button></td>
+                <td><button class="modal-btn chouse17">追加</button></td>
+                <td><button class="modal-btn chouse18">追加</button></td>
+            </tbody>
+            <tbody>
+                <td>4</td>
+                <td><button class="modal-btn chouse19">追加</button></td>
+                <td><button class="modal-btn chouse20">追加</button></td>
+                <td><button class="modal-btn chouse21">追加</button></td>
+                <td><button class="modal-btn chouse22">追加</button></td>
+                <td><button class="modal-btn chouse23">追加</button></td>
+                <td><button class="modal-btn chouse24">追加</button></td>
+            </tbody>
+            <tbody>
+                <td>5</td>
+                <td><button class="modal-btn chouse25">追加</button></td>
+                <td><button class="modal-btn chouse26">追加</button></td>
+                <td><button class="modal-btn chouse27">追加</button></td>
+                <td><button class="modal-btn chouse28">追加</button></td>
+                <td><button class="modal-btn chouse29">追加</button></td>
+                <td><button class="modal-btn chouse30">追加</button></td>
+            </tbody>
+        </table>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <ul>
+                    <li><a href="kamoku2.php?subject=文学研究1"><button class="subject-btn">文学研究1</button></a></li>
+                    <li><a href="kamoku2.php?subject=文章表現法1"><button class="subject-btn">文章表現法1</button></li>
+                    <li><a href="kamoku2.php?subject=国語科教育法"><button class="subject-btn">国語科教育法</button></li>
+                    <li><a href="kamoku2.php?subject=英米文学1"><button class="subject-btn">英米文学1</button></li>
+                    <li><a href="kamoku2.php?subject=日本史論"><button class="subject-btn">日本史論</button></li>
+                    <li><a href="kamoku2.php?subject=図書館サービス論"><button class="subject-btn">図書館サービス論</button></li>
+                    <li><a href="kamoku2.php?subject=博物館概論"><button class="subject-btn">博物館概論</button></li>
+                    <li><a href="kamoku2.php?subject=学科ゼミ1"><button class="subject-btn">学科ゼミ1</button></li>
+                </ul>
+            </div>
+    
+        </div>
+       
     </body>
 </html>
