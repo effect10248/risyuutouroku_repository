@@ -1,9 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
     <head>
         <title>履修登録 科目追加入力</title>
         <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+              <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+              </a>
+        
+              <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 link-secondary">トップページ</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">お知らせ</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">履修登録編集</a></li>
+                <li><a href="kamokutouroku.html" class="nav-link px-2 link-dark">教員専用ページ</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">カレンダー</a></li>
+              </ul>
+        
+              <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                <button type="button" class="btn btn-primary">Sign-up</button>
+              </div>
+            </header>
+        <!-- パンくずリスト -->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">トップページ</a></li>
+              <li class="breadcrumb-item active" aria-current="page">履修登録編集</li>
+            </ol>
+        </nav>
+        <!-- ここにPHPで、クリックした日時に受講可能な科目を表示させる内容を記述 -->
+        <h1>履修登録編集</h1>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">月</th>
+                <th scope="col">火</th>
+                <th scope="col">水</th>
+                <th scope="col">木</th>
+                <th scope="col">金</th>
+                <th scope="col">土</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><input class="chouse1 btn btn-primary modal-btn" type="button" value="追加" data-day-of-week="monday" data-class-period="1"><p class="subject">ここに表示</p></td>
+                <td><input class="chouse2 btn btn-primary modal-btn" type="button" value="追加" data-day-of-week="tuesday" data-class-period="1"><p class="subject">ここに表示</p></td>
+                <td><input class="chouse3 btn btn-primary modal-btn" type="button" value="追加" data-day-of-week="wednesday" data-class-period="1"><p class="subject">ここに表示</p></td>
+                <td><input class="chouse4 btn btn-primary modal-btn" type="button" value="追加" data-day-of-week="thursday" data-class-period="1"><p class="subject">ここに表示</p></td>
+                <td><input class="chouse5 btn btn-primary modal-btn" type="button" value="追加" data-day-of-week="friday" data-class-period="1"><p class="subject">ここに表示</p></td>
+                <td><input class="chouse6 btn btn-primary modal-btn" type="button" value="追加" data-day-of-week="Saturday" data-class-period="1"><p class="subject">ここに表示</p></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><input class="chouse7 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="monday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse8 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="tuesday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse9 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="wednesday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse10 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="thursday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse11 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="friday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse12 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="Saturday" data-class-period="1"><p class="subject">ここに表示</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><input class="chouse13 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="monday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse14 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="tuesday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse15 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="wednesday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse16 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="thursday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse17 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="friday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse18 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="Saturday" data-class-period="1"><p class="subject">ここに表示</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td><input class="chouse19 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="monday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse20 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="tuesday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse21 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="wednesday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse22 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="thursday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse23 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="friday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse24 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="Saturday" data-class-period="1"><p class="subject">ここに表示</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td><input class="chouse25 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="monday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse26 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="tuesday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse27 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="wednesday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse28 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="thursday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse29 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="friday" data-class-period="1"><p class="subject">ここに表示</td>
+                <td><input class="chouse30 btn btn-primary modal-btn" type="button" value="追加"data-day-of-week="Saturday" data-class-period="1"><p class="subject">ここに表示</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <ul>
+                    <li><button class="subject-btn" data-subject-id="1">文学研究1</button></li>
+                    <li><button class="subject-btn" data-subject-id="2">文章表現法1</button></li>
+                    <li><button class="subject-btn" data-subject-id="3">国語科教育法</button></li>
+                    <li><button class="subject-btn" data-subject-id="4">英米文学1</button></li>
+                    <li><button class="subject-btn" data-subject-id="5">日本史論</button></li>
+                    <li><button class="subject-btn" data-subject-id="6">図書館サービス論</button></li>
+                    <li><button class="subject-btn" data-subject-id="7">博物館概論</button></li>
+                    <li><button class="subject-btn" data-subject-id="8">学科ゼミ1</button></li>
+                </ul>
+            </div>
+    
+        </div>
+        <footer class="footer">
+            <div class="container">
+              <p class="text-muted">@履修登録アプリ</p>
+            </div>
+        </footer> 
 
         <script>
             // モーダルウィンドウを取得する
@@ -11,14 +129,14 @@
     
             // class="modal-btn"の要素を全て取得する
             var modalBtnList = document.querySelectorAll(".modal-btn");
-    
+
             // class="close"がついた最初の要素を取得する
             var span = document.querySelector(".close");
     
             // class="subject-btn"がついた要素を全て取得する
             var subjectBtnList = document.querySelectorAll(".subject-btn");
     
-            // クリックされたモーダルボタンを保持する
+            // クリックされた追加ボタンを保持する
             var activeBtn;
     
             // モーダルを開くクリックイベントを全てのボタンに付与する
@@ -34,8 +152,24 @@
             // 科目ボタンにクリックイベントを付与する
             subjectBtnList.forEach(btn => {
                 btn.onclick = function (event) {
-                    // モーダルのボタンのテキストを更新
-                    activeBtn.textContent = event.target.textContent;
+                    const subject = activeBtn.parentElement.querySelector('.subject');
+                    // クリックされた科目の内容を表示する
+                    subject.textContent = event.target.textContent;
+                    const subjectId = event.target.dataset.subjectId;
+                    const dayOfWeek = activeBtn.dataset.dayOfWeek;
+                    const classPeriod = activeBtn.dataset.classPeriod;
+                    // データベースへの登録処理
+                    const form = new FormData();
+                    form.append('user_id', 1);
+                    form.append('subject_id', subjectId);
+                    form.append('day_of_week', dayOfWeek);
+                    form.append('class_period', classPeriod);
+                    fetch('/risyuutouroku_app/create_course_record.php', {
+                      method: 'POST',
+                      body: form
+                    })
+                      .then((response) => response.text())
+                      .then((data) => console.log(data));
                     // モーダルを閉じる
                     modal.style.display = "none";
                 }
@@ -53,93 +187,6 @@
                 }
             }
         </script>
-
-    </head>
-    <body>
-        <!-- ここにPHPで、クリックした日時に受講可能な科目を表示させる内容を記述 -->
-        <h1>編集画面</h1>
-        <h2><td><input type="button" value="トップに戻る" onclick="location.href='top.html'"></td></h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>  </th>
-                    <th>月</th>
-                    <th>火</th>
-                    <th>水</th>
-                    <th>木</th>
-                    <th>金</th>
-                    <th>土</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <!-- 追加 -->
-                    <td><button class="modal-btn chouse1">追加</button></td>
-                    <td><button class="modal-btn chouse2">追加</button></td>
-                    <td><button class="modal-btn chouse3">追加</button></td>
-                    <td><button class="modal-btn chouse4">追加</button></td>
-                    <td><button class="modal-btn chouse5">追加</button></td>
-                    <td><button class="modal-btn chouse6">追加</button></td>
-                </tr>
-            </tbody>
-            <tbody>
-                <td>2</td>
-                <td><button class="modal-btn chouse7">追加</button></td>
-                <td><button class="modal-btn chouse8">追加</button></td>
-                <td><button class="modal-btn chouse9">追加</button></td>
-                <td><button class="modal-btn chouse10">追加</button></td>
-                <td><button class="modal-btn chouse11">追加</button></td>
-                <td><button class="modal-btn chouse12">追加</button></td>
-            </tbody>
-            <tbody>
-                <td>3</td>
-                <td><button class="modal-btn chouse13">追加</button></td>
-                <td><button class="modal-btn chouse14">追加</button></td>
-                <td><button class="modal-btn chouse15">追加</button></td>
-                <td><button class="modal-btn chouse16">追加</button></td>
-                <td><button class="modal-btn chouse17">追加</button></td>
-                <td><button class="modal-btn chouse18">追加</button></td>
-            </tbody>
-            <tbody>
-                <td>4</td>
-                <td><button class="modal-btn chouse19">追加</button></td>
-                <td><button class="modal-btn chouse20">追加</button></td>
-                <td><button class="modal-btn chouse21">追加</button></td>
-                <td><button class="modal-btn chouse22">追加</button></td>
-                <td><button class="modal-btn chouse23">追加</button></td>
-                <td><button class="modal-btn chouse24">追加</button></td>
-            </tbody>
-            <tbody>
-                <td>5</td>
-                <td><button class="modal-btn chouse25">追加</button></td>
-                <td><button class="modal-btn chouse26">追加</button></td>
-                <td><button class="modal-btn chouse27">追加</button></td>
-                <td><button class="modal-btn chouse28">追加</button></td>
-                <td><button class="modal-btn chouse29">追加</button></td>
-                <td><button class="modal-btn chouse30">追加</button></td>
-            </tbody>
-        </table>
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <ul>
-                    <li><a href="kamoku2.php?subject=文学研究1"><button class="subject-btn">文学研究1</button></a></li>
-                    <li><a href="kamoku2.php?subject=文章表現法1"><button class="subject-btn">文章表現法1</button></li>
-                    <li><a href="kamoku2.php?subject=国語科教育法"><button class="subject-btn">国語科教育法</button></li>
-                    <li><a href="kamoku2.php?subject=英米文学1"><button class="subject-btn">英米文学1</button></li>
-                    <li><a href="kamoku2.php?subject=日本史論"><button class="subject-btn">日本史論</button></li>
-                    <li><a href="kamoku2.php?subject=図書館サービス論"><button class="subject-btn">図書館サービス論</button></li>
-                    <li><a href="kamoku2.php?subject=博物館概論"><button class="subject-btn">博物館概論</button></li>
-                    <li><a href="kamoku2.php?subject=学科ゼミ1"><button class="subject-btn">学科ゼミ1</button></li>
-                </ul>
-            </div>
-    
-        </div>
-       
     </body>
 </html>
+
